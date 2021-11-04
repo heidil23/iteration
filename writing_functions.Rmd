@@ -56,7 +56,7 @@ Let's try again - add conditions
 ```{r}
 z_scores = function(x) {
   
-  if (~is.numeric(x)) {
+  if (!is.numeric(x)) {
     stop("x needs to be numeric")
     }
   
@@ -83,5 +83,34 @@ mtcars
 z_scores(mtcars)
 
 z_scores(x = y_vec)
+```
+
+## Multiple outputs
+
+```{r}
+mean_sd = function(x) {
+  
+  if (!is.numeric(x)) {
+    stop("x needs to be numeric")
+    }
+  
+  if (length(x) <3) {
+    stop("x should have at least 3 numbers")
+  }
+
+  mean_x = mean(x)
+  sd_x = sd(x)
+        
+  output_df = 
+    tibble(
+      mean = mean_x,
+      sd = sd_x)
+
+  return(output_df)
+  
+}
+
+mean_sd(x_vec)
+mean_sd(y_vec)
 ```
 
