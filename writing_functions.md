@@ -55,11 +55,11 @@ x_vec = rnorm(25, mean = 5, sd = 4)
 (x_vec - mean(x_vec)) / sd(x_vec)
 ```
 
-    ##  [1]  0.51372672  1.18240765 -1.11804500  1.32213627  0.18015272 -1.69920348
-    ##  [7]  0.05795153 -0.36744829 -1.06657494 -0.73882026  1.16498339  0.57542762
-    ## [13] -1.26838951  1.77360987 -0.68359033 -0.42037199  0.17456730  0.69521343
-    ## [19]  1.17279496  0.58599978  0.68186441 -0.74927130  0.34832435 -2.00900473
-    ## [25] -0.30844016
+    ##  [1] -0.479127991 -0.375116740  0.177481710  0.434379925 -1.135565071
+    ##  [6]  0.867493217 -0.572866043 -1.169233624  0.227469841 -0.875392974
+    ## [11]  0.000440966 -1.504978982  2.911015494 -1.101061245 -0.488305385
+    ## [16]  1.346499022  0.928053395  0.139256816 -0.344913580  0.244432115
+    ## [21]  0.537190849 -0.187939310  0.172797705 -1.181272260  1.429262150
 
 ``` r
 z_scores = function(x) {
@@ -73,11 +73,11 @@ z_scores = function(x) {
 z_scores(x = x_vec)
 ```
 
-    ##  [1]  0.51372672  1.18240765 -1.11804500  1.32213627  0.18015272 -1.69920348
-    ##  [7]  0.05795153 -0.36744829 -1.06657494 -0.73882026  1.16498339  0.57542762
-    ## [13] -1.26838951  1.77360987 -0.68359033 -0.42037199  0.17456730  0.69521343
-    ## [19]  1.17279496  0.58599978  0.68186441 -0.74927130  0.34832435 -2.00900473
-    ## [25] -0.30844016
+    ##  [1] -0.479127991 -0.375116740  0.177481710  0.434379925 -1.135565071
+    ##  [6]  0.867493217 -0.572866043 -1.169233624  0.227469841 -0.875392974
+    ## [11]  0.000440966 -1.504978982  2.911015494 -1.101061245 -0.488305385
+    ## [16]  1.346499022  0.928053395  0.139256816 -0.344913580  0.244432115
+    ## [21]  0.537190849 -0.187939310  0.172797705 -1.181272260  1.429262150
 
 ``` r
 y_vec = rnorm(40, mean = 12, sd = .3)
@@ -85,13 +85,13 @@ y_vec = rnorm(40, mean = 12, sd = .3)
 z_scores(y_vec)
 ```
 
-    ##  [1] -1.38795096 -0.25625471 -0.63981376 -0.06487860 -0.90282777 -0.01602177
-    ##  [7] -0.76729238 -0.51392521  0.35362982 -0.12205752 -0.39116067  0.41547580
-    ## [13]  2.28635149  0.52901940  0.49453224  0.40598023 -2.01088963  2.01638565
-    ## [19] -1.40808944  0.26959783  0.63681606  0.19390138  0.27107776  0.39403239
-    ## [25] -0.12778864  1.33417017 -0.43780760  1.91274990  0.02229651 -1.84628510
-    ## [31]  0.14279503 -0.32458441 -0.18615248 -1.13936515  1.13163140 -1.61330263
-    ## [37] -0.02453029  1.42502064 -0.82618056  0.77169559
+    ##  [1]  1.38044851 -0.74240997 -1.02223030  0.28102806  0.22027017 -1.93532266
+    ##  [7] -1.40251799 -0.27835557  0.02148907  1.04361750  0.59688577  0.04338207
+    ## [13] -1.62077817 -0.71151404  0.19861229 -0.27041957 -0.49768189 -0.48663740
+    ## [19] -0.25164879  1.92139526 -1.46661073  0.51117090 -0.69503315  0.27703555
+    ## [25] -1.42310012  0.68605073  1.96344723 -0.54607260  0.29232207  1.26072345
+    ## [31] -0.34963619  1.98622931 -1.05970405  2.00163569  0.21177805  0.14528877
+    ## [37]  0.02322113  0.01598993 -0.02716235 -0.29518599
 
 How great is this?
 
@@ -177,13 +177,13 @@ z_scores(mtcars)
 z_scores(x = y_vec)
 ```
 
-    ##  [1] -1.38795096 -0.25625471 -0.63981376 -0.06487860 -0.90282777 -0.01602177
-    ##  [7] -0.76729238 -0.51392521  0.35362982 -0.12205752 -0.39116067  0.41547580
-    ## [13]  2.28635149  0.52901940  0.49453224  0.40598023 -2.01088963  2.01638565
-    ## [19] -1.40808944  0.26959783  0.63681606  0.19390138  0.27107776  0.39403239
-    ## [25] -0.12778864  1.33417017 -0.43780760  1.91274990  0.02229651 -1.84628510
-    ## [31]  0.14279503 -0.32458441 -0.18615248 -1.13936515  1.13163140 -1.61330263
-    ## [37] -0.02453029  1.42502064 -0.82618056  0.77169559
+    ##  [1]  1.38044851 -0.74240997 -1.02223030  0.28102806  0.22027017 -1.93532266
+    ##  [7] -1.40251799 -0.27835557  0.02148907  1.04361750  0.59688577  0.04338207
+    ## [13] -1.62077817 -0.71151404  0.19861229 -0.27041957 -0.49768189 -0.48663740
+    ## [19] -0.25164879  1.92139526 -1.46661073  0.51117090 -0.69503315  0.27703555
+    ## [25] -1.42310012  0.68605073  1.96344723 -0.54607260  0.29232207  1.26072345
+    ## [31] -0.34963619  1.98622931 -1.05970405  2.00163569  0.21177805  0.14528877
+    ## [37]  0.02322113  0.01598993 -0.02716235 -0.29518599
 
 ## Multiple outputs
 
@@ -216,7 +216,7 @@ mean_sd(x_vec)
     ## # A tibble: 1 × 2
     ##    mean    sd
     ##   <dbl> <dbl>
-    ## 1  3.26  2.81
+    ## 1  5.07  3.80
 
 ``` r
 mean_sd(y_vec)
@@ -225,7 +225,7 @@ mean_sd(y_vec)
     ## # A tibble: 1 × 2
     ##    mean    sd
     ##   <dbl> <dbl>
-    ## 1  12.0 0.282
+    ## 1  12.0 0.290
 
 ## Different sample sizes, means, sds
 
@@ -245,7 +245,7 @@ sim_data %>%
     ## # A tibble: 1 × 2
     ##    mean    sd
     ##   <dbl> <dbl>
-    ## 1  1.15  3.31
+    ## 1  2.33  2.82
 
 Let’s write a function that simulates data, computes the mean and sd.
 
@@ -273,7 +273,7 @@ sim_mean_sd(30, 4, 3)
     ## # A tibble: 1 × 2
     ##    mean    sd
     ##   <dbl> <dbl>
-    ## 1  4.73  3.85
+    ## 1  4.61  3.12
 
 ``` r
 sim_mean_sd = function(n, mu = 40, sigma = 3) {
@@ -299,4 +299,153 @@ sim_mean_sd(30)
     ## # A tibble: 1 × 2
     ##    mean    sd
     ##   <dbl> <dbl>
-    ## 1  40.0  3.17
+    ## 1  39.8  2.66
+
+## Napoleon Dynamite
+
+``` r
+url = "https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber=1"
+
+dynamite_html = read_html(url)
+
+review_titles = 
+  dynamite_html %>%
+  html_elements(".a-text-bold span") %>%
+  html_text()
+
+review_stars = 
+  dynamite_html %>%
+  html_elements("#cm_cr-review_list .review-rating") %>%
+  html_text()
+
+review_text = 
+  dynamite_html %>%
+  html_elements(".review-text-content span") %>%
+  html_text()
+
+reviews = tibble(
+  title = review_titles,
+  stars = review_stars,
+  text = review_text
+)
+```
+
+Okay but there are numerous pages with reviews
+
+Write a function that gets reviews based on page url.
+
+``` r
+get_page_reviews = function(page_url){
+  
+  page_html = read_html(page_url)
+
+  review_titles = 
+    page_html %>%
+    html_elements(".a-text-bold span") %>%
+    html_text()
+  
+  review_stars = 
+    page_html %>%
+    html_elements("#cm_cr-review_list .review-rating") %>%
+    html_text()
+  
+  review_text = 
+    page_html %>%
+    html_elements(".review-text-content span") %>%
+    html_text()
+  
+  reviews = tibble(
+    title = review_titles,
+    stars = review_stars,
+    text = review_text
+  )
+  
+  return(reviews)
+}
+
+url = "https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber=1"
+
+get_page_reviews(url)
+```
+
+    ## # A tibble: 10 × 3
+    ##    title                       stars       text                                 
+    ##    <chr>                       <chr>       <chr>                                
+    ##  1 I Just everyone to know th… 5.0 out of… "\n  VOTE FOR PEDRO !!!!! LOL\n"     
+    ##  2 the cobweb in his hair dur… 5.0 out of… "\n  5 stars for being the best wors…
+    ##  3 Best quirky movie ever      5.0 out of… "\n  You all know the awesome movie …
+    ##  4 Classic Film                5.0 out of… "\n  Had to order this for our young…
+    ##  5 hehehehe                    5.0 out of… "\n  goodjobboys\n"                  
+    ##  6 Painful                     1.0 out of… "\n  I think I sneezed during the mo…
+    ##  7 GRAND                       5.0 out of… "\n  GRAND\n"                        
+    ##  8 Hello, 90s                  5.0 out of… "\n  So nostalgic movie\n"           
+    ##  9 Cult Classic                5.0 out of… "\n  Watched it with my older grandc…
+    ## 10 Format was inaccurate       4.0 out of… "\n  There was an option to choose b…
+
+``` r
+url = "https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber=2"
+
+get_page_reviews(url)
+```
+
+    ## # A tibble: 10 × 3
+    ##    title                    stars       text                                    
+    ##    <chr>                    <chr>       <chr>                                   
+    ##  1 Good funny               3.0 out of… "\n  Would recommend\n"                 
+    ##  2 Not available w/in 48 h… 1.0 out of… "\n  I couldn't watch it and there is n…
+    ##  3 Your mom went to colleg… 5.0 out of… "\n  Classic funny movie. It has some o…
+    ##  4 Very funny movie         5.0 out of… "\n  I watch this movie with my family.…
+    ##  5 Watch it twice! Trust m… 5.0 out of… "\n  Nothing to dislike!  Cult Classic …
+    ##  6 A classic                5.0 out of… "\n  If you don’t enjoy this movie, we …
+    ##  7 Can't say how many time… 5.0 out of… "\n  Such a great movie. Will never get…
+    ##  8 I pity the fool who doe… 5.0 out of… "\n  I love technology but not as much …
+    ##  9 I don’t know why it’s s… 2.0 out of… "\n  My girlfriend loves it!\n"         
+    ## 10 Okay                     3.0 out of… "\n  Okay\n"
+
+``` r
+url = "https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber=3"
+
+get_page_reviews(url)
+```
+
+    ## # A tibble: 10 × 3
+    ##    title                     stars       text                                   
+    ##    <chr>                     <chr>       <chr>                                  
+    ##  1 A WHOLESOME comedic jour… 5.0 out of… "\n  Not a moment of this movie is spa…
+    ##  2 Hilarious                 5.0 out of… "\n  Funny\n"                          
+    ##  3 Love it                   5.0 out of… "\n  What of the funniest movies\n"    
+    ##  4 WORTH IT!                 5.0 out of… "\n  It's the dry humor for me. I coul…
+    ##  5 Funny movie.              5.0 out of… "\n  Great comedy\n"                   
+    ##  6 Best movie ever!          5.0 out of… "\n  Got this for my sister who loves …
+    ##  7 I was stuck in the oil p… 5.0 out of… "\n  I watched this serially. It was s…
+    ##  8 Funny Dork humor          5.0 out of… "\n  Humor that is funnier when you wa…
+    ##  9 Still funny!              5.0 out of… "\n  Still funny!\n"                   
+    ## 10 Love it!! 💜              5.0 out of… "\n  Love it!! 💜\n"
+
+``` r
+base_url = "https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber="
+
+urls = str_c(base_url, 1:5)
+
+bind_rows(
+  get_page_reviews(urls[1]),
+  get_page_reviews(urls[2]),
+  get_page_reviews(urls[3]),
+  get_page_reviews(urls[4]),
+  get_page_reviews(urls[5]))
+```
+
+    ## # A tibble: 50 × 3
+    ##    title                       stars       text                                 
+    ##    <chr>                       <chr>       <chr>                                
+    ##  1 I Just everyone to know th… 5.0 out of… "\n  VOTE FOR PEDRO !!!!! LOL\n"     
+    ##  2 the cobweb in his hair dur… 5.0 out of… "\n  5 stars for being the best wors…
+    ##  3 Best quirky movie ever      5.0 out of… "\n  You all know the awesome movie …
+    ##  4 Classic Film                5.0 out of… "\n  Had to order this for our young…
+    ##  5 hehehehe                    5.0 out of… "\n  goodjobboys\n"                  
+    ##  6 Painful                     1.0 out of… "\n  I think I sneezed during the mo…
+    ##  7 GRAND                       5.0 out of… "\n  GRAND\n"                        
+    ##  8 Hello, 90s                  5.0 out of… "\n  So nostalgic movie\n"           
+    ##  9 Cult Classic                5.0 out of… "\n  Watched it with my older grandc…
+    ## 10 Format was inaccurate       4.0 out of… "\n  There was an option to choose b…
+    ## # … with 40 more rows
